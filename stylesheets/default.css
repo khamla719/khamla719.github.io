@@ -38,4 +38,23 @@
     padding:10px;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+li {
+    background-color: #B0853F;
+}
+div {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    background-color: #B0853F;
+}
 
+h2 {
+    background-color: #B0853F;
+    text-decoration: underline;
+}
