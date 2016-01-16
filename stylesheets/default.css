@@ -1,23 +1,31 @@
-* {
-	background-color: #B5A88F;
-}
-
-#topimage {
-	display: block;
-    max-height: 225px;
-    width: 100%;
-    height: auto;
-    margin: auto;
-}
 
 #profile {
 	display: block;
-	width: 150px;
-	height: 150px;
+    width: 50%;
+    height: auto;
 	margin-left: auto;
 	margin-right: auto;
+    margin-bottom: 10px;
+     -webkit-filter: brightness(140%);
 }
 
+.name {
+    font-size: 30px;
+    font-family: Eurostile;
+    color: #5E5F60;
+    margin-bottom: 0;
+    margin-left: 30px;
+}
+
+.title {
+    font-size: 20px;
+    font-family: Eurostile;
+    color: #5E5F60;
+    margin-top: 0;
+    margin-left: 70px;
+    margin-right: 70px;
+    border-bottom: double;
+}
 .icons {
 	display: inline;
     margin-left: auto;
@@ -29,32 +37,49 @@
     margin:0;
     padding:0;
     text-align:center;
+    color: #5E5F60;
+    font-family: Eurostile;
+    font-size: 1.5em;
+    border-bottom: double;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 .nav li{
     display:inline;
+    padding-right: 30px;
 }
 .nav a{
     display:inline-block;
     padding:10px;
 }
 
-ul {
+.nav ul{
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: inline-block;
 }
-li {
-    background-color: #B0853F;
+
+.nav a:link{
+    text-decoration: none;
 }
+
+.nav a:visited{
+    text-decoration: none;
+    color: #5E5F60;
+}
+
+.nav a:hover{
+    background-color: #5E5F60;
+    color: white;
+}
+
 div {
     -webkit-column-count: 3; /* Chrome, Safari, Opera */
     -moz-column-count: 3; /* Firefox */
     column-count: 3;
-    background-color: #B0853F;
 }
 
 h2 {
-    background-color: #B0853F;
     text-decoration: underline;
 }
