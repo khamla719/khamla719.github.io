@@ -9,6 +9,10 @@
      -webkit-filter: brightness(140%);
 }
 
+.img-circle {
+    border-radius: 10%;
+}
+
 .name {
     font-size: 30px;
     font-family: Eurostile;
