@@ -1,6 +1,17 @@
-#about{
+#about {
   display: block;
-  width: 20%;
+  width: 30%;
   height: auto;
   margin-right: 20px;
+}
+
+#bio {
+  margin-left: 200px;
+  margin-right: 200px;
+  text-decoration: none;
+}
+
+#quote {
+  margin-left: 150px;
+  margin-right: 150px;
 }
