@@ -1,8 +1,8 @@
 /*
-	Template Name: 
+	Template Name:
 	Author: Themeturn
 	Author URI: http://themeforest.net/user/ThemeTurn
-	Description: 
+	Description:
 	Version: 1.0
 */
 
@@ -57,9 +57,9 @@
 
 @font-face {
 	font-family: 'MyriadPro-Regular';
-	src: url('fonts/MyriadPro-Regular.eot?') format('eot'), 
+	src: url('fonts/MyriadPro-Regular.eot?') format('eot'),
 	     url('fonts/MyriadPro-Regular.otf')  format('opentype'),
-	     url('fonts/MyriadPro-Regular.woff') format('woff'), 
+	     url('fonts/MyriadPro-Regular.woff') format('woff'),
 	     url('fonts/MyriadPro-Regular.ttf')  format('truetype'),
 	     url('fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
 }
@@ -146,7 +146,7 @@ ul,li{
 body, p{
 	/*font-family: 'MyriadPro-Regular', serif;*/
 	font-family: 'Roboto', sans-serif;
-	font-weight: 400; 
+	font-weight: 400;
 	font-size: 18px;
 	line-height: 30px;
 }
@@ -300,7 +300,9 @@ h2.title{
 	border: 0px;
 	border-radius: 0px;
 }
-.navbar-nav {}
+.navbar-nav {
+	margin-left: 50px;
+}
 .navbar-nav li{
 	/*padding-right: 40px;*/
 }
@@ -379,7 +381,7 @@ h2.title{
     height: 100%;
     z-index: 2;
     background-size: cover;
-    background-position: -40px center, 0px center;
+    background-position: center;
     width: 45%;
 }
 .profile-desc{
@@ -506,7 +508,7 @@ h2.title{
 
 
 
-/*Section-testimonial 
+/*Section-testimonial
 ==================================================*/
 #section-testimonial{
 	background: #f2f2f1;
@@ -615,7 +617,7 @@ h2.title{
 }
 .contact-left ul li span{
 	color: #fff;
-	
+
 }
 
 .contact-box{
@@ -637,7 +639,7 @@ h2.title{
 	border: 0px;
 }
 .contact-form .btn-default{
-	
+
 	background: #191f21;
 	border: 0px;
 }
