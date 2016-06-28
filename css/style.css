@@ -592,6 +592,7 @@ h2.title{
 }
 #section-contact .heading-title{
 	color: #fff;
+	text-align: center;
 }
 .contact-left{
 	padding-top: 30px;
@@ -672,4 +673,14 @@ h2.title{
 }
 .socail-link a:hover i{
 	color: #fff;
+}
+
+#contact-header {
+	margin: auto;
+	width: 50%;
+}
+
+#contact-email {
+	color: white;
+	text-align: center;
 }
