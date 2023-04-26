@@ -18,11 +18,19 @@
     p {
       font-size: 1.5em;
     }
+    .under-construction {
+      display: inline-block;
+      animation: blink 1.5s linear infinite;
+    }
+    @keyframes blink {
+      0%, 100% {opacity: 1;}
+      50% {opacity: 0;}
+    }
   </style>
 </head>
 <body>
-  <h1>Khamla's website is currently</h1>
-  <p>🚧 Under Construction 🚧</p>
+  <h1>My Website</h1>
+  <p><span class="under-construction">🚧 Under Construction 🚧</span></p>
   <p>Please check back soon!</p>
 </body>
 </html>
