@@ -1,31 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>There is No Spoon: Khamla's Digital Dossier</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Front End Developer</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
-  <h1>My Timeline</h1>
-  <div class="timeline-container">
-    <div class="timeline">
-      <div class="timeline-item" onclick="showEventDetails(this)">
-        <span class="date">April 2007</span>
-        <span class="event">Entered the exhilarating world of cubicle life – coffee anyone?</span>
-      </div>
-      <!-- Add the 'timeline-item inactive' class to every item but the first -->
-      <div class="timeline-item inactive" onclick="showEventDetails(this)">
-        <span class="date">January 2011</span>
-        <span class="event">Tasted the bittersweet reality of carving my own path – character-building, for sure!</span>
-      </div>
-      <div class="timeline-item inactive" onclick="showEventDetails(this)">
-        <span class="date">November 2015</span>
-        <span class="event">Embraced my inner geek and chose my own career adventure – coding is cool, right?</span>
-      </div>
-      <!-- Add more timeline items here -->
-    </div>
-  </div>
-  <script src="script.js"></script>
+
+    <!-- Header -->
+    <header>
+        <h1>Your Name</h1>
+        <h2>Front End Developer</h2>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Me -->
+    <section id="about">
+        <img src="assets/images/profile.jpg" alt="Your Name" width="150">
+        <h3>About Me</h3>
+        <p>Hello! I'm [Your Name], a passionate Front End Developer with a knack for creating user-friendly interfaces. I love turning designs into functional and responsive web pages.</p>
+        <h4>Skills</h4>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <!-- add more skills as needed -->
+        </ul>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <h3>Education</h3>
+        <ul>
+            <li>
+                <h4>Bachelor of Science in Computer Science</h4>
+                <p>University XYZ, 2015-2019</p>
+            </li>
+            <!-- Add more education records as needed -->
+        </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h3>Projects</h3>
+        <div class="project-card">
+            <img src="assets/images/project-thumbnail.jpg" alt="Project Name" width="250">
+            <h4>Project Title</h4>
+            <p>Brief description of the project goes here. This can include the goals, technologies used, and other relevant information.</p>
+            <a href="#">Link to project</a>
+        </div>
+        <!-- Duplicate the .project-card for other projects -->
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <h3>Contact Me</h3>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>LinkedIn: <a href="#">Your LinkedIn Profile</a></p>
+        <p>GitHub: <a href="#">Your GitHub Profile</a></p>
+        <p>&copy; 2023 by Your Name</p>
+    </footer>
+
 </body>
+
 </html>

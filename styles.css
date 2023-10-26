@@ -27,7 +27,7 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #FFD700; /* Yellow background */
+  background-image: linear-gradient(to right, #FFD700, #FFA500);
 }
 
 h1 {
@@ -91,3 +91,9 @@ h1 {
   padding: 10px;
   border-radius: 5px;
 }
+
+.event-image {
+  display: none;
+  width: 50%;
+}
+
