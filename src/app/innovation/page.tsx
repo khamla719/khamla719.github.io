@@ -1,17 +1,15 @@
 import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import SkillsSection from "@/components/SkillsSection";
 import InnovationLab from "@/components/InnovationLab";
 import Footer from "@/components/Footer";
 
-export default function Home() {
+export default function InnovationPage() {
   return (
     <>
       <Header />
-      <Hero />
-      <SkillsSection />
-      <InnovationLab />
+      <div className="pt-24">
+        <InnovationLab />
+      </div>
       <Footer />
     </>
   );
-}
+} 
