@@ -12,5 +12,45 @@ html {
 }
 
 body {
-  @apply antialiased;
+  @apply antialiased bg-base-100 text-base-content;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(var(--color-primary-rgb), 0.15) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(var(--color-secondary-rgb), 0.15) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(var(--color-accent-rgb), 0.15) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(var(--color-primary-rgb), 0.15) 0px, transparent 50%);
+  background-attachment: fixed;
+}
+
+/* Glassmorphism Utility */
+.glass-panel {
+  @apply bg-white/10 backdrop-blur-lg border border-white/20 shadow-xl;
+}
+
+/* Dark mode adjustment for glass */
+@media (prefers-color-scheme: dark) {
+  .glass-panel {
+    @apply bg-black/10 border-white/10;
+  }
+}
+
+/* Animation Utilities */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes gradient-xy {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-xy 15s ease infinite;
 }

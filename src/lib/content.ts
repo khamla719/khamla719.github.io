@@ -1,7 +1,8 @@
 export const personalData = {
-  name: "Khamla",
+  name: "Khamla Phimmachack",
   title: "Technical Support Engineer & Problem Solver",
-  email: "khamla@example.com", // Replace with actual email
+  email: "khamla719@gmail.com",
+  linkedin: "https://www.linkedin.com/in/khamlaphimmachack/",
   location: "Chattanooga, TN",
   about: {
     greeting: "Hi, I'm Khamla.",
