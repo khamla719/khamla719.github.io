@@ -27,7 +27,7 @@ export default function About() {
             <p className="lead text-xl font-medium text-primary/90 mb-6">{personalData.about.longSummary}</p>
             <p>
                 My journey started at Dev Bootcamp in San Francisco, but my real education happened in the trenches of support queues and server logs.
-                I don't just close tickets; I solve problems. Whether it's a car that won't start or an API that won't authenticate, the process is the same: break it down, find the root cause, fix it, and explain it so it doesn't happen again.
+                I don't just close tickets; I solve problems. Whether it's conflicting alerts from an electric vehicle or an API that won't authenticate, the process is the same: break it down, find the root cause, fix it, and explain it so it doesn't happen again.
             </p>
           </div>
         </motion.div>

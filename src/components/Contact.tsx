@@ -19,7 +19,7 @@ export default function Contact() {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-8 tracking-tight">Let's Solve Something Together</h2>
           <p className="text-xl text-base-content/80 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Have a complex problem that needs fixing? Or just want to talk about electric cars and APIs?
+            Have a complex problem that needs fixing? Or just want to talk about electric cars and AI tools?
             I'm always open to new opportunities and interesting conversations.
           </p>
           

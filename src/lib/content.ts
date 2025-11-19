@@ -6,8 +6,8 @@ export const personalData = {
   location: "Chattanooga, TN",
   about: {
     greeting: "Hi, I'm Khamla.",
-    summary: "I'm the person you call when 'have you tried turning it off and on again' doesn't work. With over 4 years in B2B SaaS and technical support, I specialize in diagnosing complex technical issues, bridging the gap between customers and engineering, and writing documentation that people actually want to read.",
-    longSummary: "I’ve spent my career diving into the deep end of technical problems. Whether it’s troubleshooting a critical platform error at Skuid or diagnosing complex systems at Tesla, I thrive on the 'Aha!' moment when a solution clicks into place. I believe support isn't just about fixing bugs—it's about empowering users and making products better."
+    summary: "I bridge the gap between people and technology, transforming complex challenges into clear, lasting solutions.",
+    longSummary: "I’ve spent my career diving into the deep end of technical problems and thrive on the 'Aha!' moment when a solution clicks into place. Support isn't just about fixing bugs—it's about empowering users and making products better."
   },
   experience: [
     {
@@ -44,8 +44,8 @@ export const personalData = {
     }
   ],
   skills: [
-    { category: "The Tech", items: ["JavaScript", "React", "Next.js", "Node.js", "SQL", "Ruby on Rails", "HTML/CSS"] },
-    { category: "The Tools", items: ["Git/GitHub", "Jira", "Freshdesk", "Cursor AI", "Claude Sonnet"] },
-    { category: "The Human Side", items: ["Root Cause Analysis", "Technical Writing", "Cross-functional Collaboration", "Agile/Scrum"] }
+    { category: "The Tech", items: ["JavaScript", "React", "Next.js", "REST APIs", "SQL", "Ruby on Rails", "HTML/CSS"] },
+    { category: "The Tools", items: ["Git/GitHub", "Jira", "Freshdesk", "Cursor AI", "Salesforce/CRM"] },
+    { category: "The Human Side", items: ["Translating Technical Complexity", "Cross-Team Alignment", "Empathetic Communication", "Process Optimization"] }
   ]
 };
