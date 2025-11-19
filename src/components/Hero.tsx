@@ -19,7 +19,7 @@ export default function Hero() {
         <motion.div 
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] as any }}
           className="relative w-full max-w-md lg:max-w-none flex-1 will-change-transform"
         >
           <div className="aspect-square relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20">
@@ -40,7 +40,7 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] as any }}
             className="will-change-transform"
           >
             <h1 className="text-5xl lg:text-7xl font-bold tracking-tight mb-6 leading-tight">
@@ -54,7 +54,7 @@ export default function Hero() {
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] as any }}
             className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start will-change-transform"
           >
             <a href="#experience" className="btn btn-primary btn-lg rounded-full px-8 shadow-lg hover:shadow-primary/50 transition-all duration-300 group">
