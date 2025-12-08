@@ -71,12 +71,10 @@ jobs:
           # If source files changed but packages didn't, rebuild from a prior cache.
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
-      - name: Clean install dependencies
-        run: |
-          rm -rf node_modules
-          npm install --include=optional
+      - name: Install dependencies
+        run: npm install
       - name: Build with Next.js
-        run: ${{ steps.detect-package-manager.outputs.runner }} next build --no-turbo
+        run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
