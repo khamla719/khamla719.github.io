@@ -76,9 +76,7 @@ jobs:
           rm -rf node_modules
           npm install --include=optional
       - name: Build with Next.js
-        run: ${{ steps.detect-package-manager.outputs.runner }} next build
-        env:
-          NEXT_PRIVATE_SKIP_TURBO: "1"
+        run: ${{ steps.detect-package-manager.outputs.runner }} next build --no-turbo
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
