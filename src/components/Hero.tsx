@@ -37,7 +37,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] as any }}
             className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start will-change-transform"
           >
-            <a href="#experience" className="btn btn-primary btn-lg rounded-full px-8 shadow-lg hover:shadow-primary/50 transition-all duration-300 group">
+            <a href="#experience" className="btn btn-primary btn-lg rounded-full px-8 shadow-lg hover:shadow-primary/50 transition-all duration-300 group text-white">
               See My Work
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>

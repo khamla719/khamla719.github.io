@@ -128,6 +128,17 @@
             color: var(--text-primary);
         }
 
+        h3 a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        h3 a:hover {
+            color: var(--tech-blue);
+            text-decoration: underline;
+        }
+
         /* Experience Section */
         .experience-item {
             margin-bottom: 18pt;
@@ -313,7 +324,7 @@
             <span>|</span>
             <span>LinkedIn: <a href="https://www.linkedin.com/in/khamlaphimmachack/">linkedin.com/in/khamlaphimmachack</a></span>
             <span>|</span>
-            <span>Location: Chattanooga, TN</span>
+            <span>Website: <a href="https://khamla719.github.io/">khamla719.github.io</a></span>
         </div>
     </header>
 
@@ -390,8 +401,15 @@
         <h2>Projects</h2>
         
         <div class="experience-item">
-            <h3>Portfolio Website</h3>
-            <p>Designed and deployed a responsive portfolio using TypeScript, Tailwind CSS, and Framer Motion to demonstrate proficiency with modern UI behavior, component structures, and troubleshooting web-layer issues.</p>
+            <h3><a href="https://moon-rabbit-mvp.vercel.app/" target="_blank" rel="noopener noreferrer">Moon Rabbit</a></h3>
+            <p>Built a bilingual landing page and lead management CRM for a small business service, featuring a Next.js 15 App Router architecture, MongoDB-backed pipeline dashboard, and NextAuth authentication to demonstrate familiarity with server components, API routes, and production-ready admin tooling.</p>
+            <p><strong>Technologies:</strong> Next.js · React · Tailwind CSS · MongoDB · NextAuth</p>
+        </div>
+
+        <div class="experience-item">
+            <h3><a href="https://songsense.vercel.app/" target="_blank" rel="noopener noreferrer">SongSense</a></h3>
+            <p>A Thai music/language learning platform that syncs cultural annotations to YouTube videos in real time, using Next.js 15 App Router with TypeScript, MongoDB for song/note management, and NextAuth admin authentication.</p>
+            <p><strong>Technologies:</strong> Next.js · React · TypeScript · Tailwind CSS · MongoDB · NextAuth</p>
         </div>
     </section>
 

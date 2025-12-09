@@ -26,7 +26,7 @@ export default function Contact() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <a 
               href={`mailto:${personalData.email}`} 
-              className="btn btn-primary btn-lg rounded-full px-10 w-full sm:w-auto shadow-lg hover:shadow-primary/50 transition-all duration-300 group"
+              className="btn btn-primary btn-lg rounded-full px-10 w-full sm:w-auto shadow-lg hover:shadow-primary/50 transition-all duration-300 group text-white"
             >
               <Mail className="w-5 h-5 mr-2 group-hover:animate-bounce" />
               Say Hello

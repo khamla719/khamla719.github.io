@@ -2,7 +2,8 @@
 
 import { personalData } from "@/lib/content";
 import { motion } from "framer-motion";
-import { Code2, ExternalLink, Github, FileText } from "lucide-react";
+import { Code2, ExternalLink } from "lucide-react";
+import Image from "next/image";
 
 export default function Projects() {
   const container = {
@@ -45,31 +46,30 @@ export default function Projects() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="flex flex-wrap justify-center gap-8"
         >
           {personalData.projects.map((project, index) => (
             <motion.div
               key={index}
               variants={item}
-              className="card glass-panel hover:scale-[1.02] transition-all duration-300 group h-full flex flex-col"
+              className="card glass-panel hover:scale-[1.02] transition-all duration-300 group h-full flex flex-col overflow-hidden w-full sm:w-[calc(50%-1rem)] md:w-[400px] lg:w-[350px]"
             >
+              {project.image && (
+                <div className="relative w-full h-48 overflow-hidden">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              )}
               <div className="card-body flex flex-col">
                 <div className="flex items-start justify-between mb-4">
                   <div className="p-3 bg-primary/10 rounded-xl text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                     <Code2 className="w-6 h-6" />
                   </div>
                   <div className="flex gap-2">
-                    {project.github && (
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn btn-ghost btn-sm btn-circle hover:bg-primary hover:text-white transition-colors"
-                        aria-label="View on GitHub"
-                      >
-                        <Github className="w-4 h-4" />
-                      </a>
-                    )}
                     {project.live && project.live !== "#" && (
                       <a
                         href={project.live}

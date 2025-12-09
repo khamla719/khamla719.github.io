@@ -47,7 +47,7 @@ export default function Skills() {
           The Toolkit
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-center gap-8">
           {personalData.skills.map((skillGroup, index) => (
             <motion.div
               key={index}
@@ -55,7 +55,7 @@ export default function Skills() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="card glass-panel border-t-4 border-t-primary"
+              className="card glass-panel border-t-4 border-t-primary w-full sm:w-[calc(50%-1rem)] md:w-[320px]"
             >
               <div className="card-body">
                 <div className="flex items-center gap-3 mb-6 pb-4 border-b border-base-content/10">

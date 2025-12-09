@@ -38,11 +38,18 @@ export const personalData = {
   ],
   projects: [
     {
-      title: "Portfolio Website",
-      description: "Designed and deployed a responsive portfolio using TypeScript, Tailwind CSS, and Framer Motion to demonstrate proficiency with modern UI behavior, component structures, and troubleshooting web-layer issues.",
-      technologies: ["TypeScript", "Tailwind CSS", "Framer Motion"],
-      github: "https://github.com/khamla719/resume",
-      live: "#"
+      title: "Moon Rabbit",
+      description: "Built a bilingual landing page and lead management CRM for a small business service, featuring a Next.js 15 App Router architecture, MongoDB-backed pipeline dashboard, and NextAuth authentication to demonstrate familiarity with server components, API routes, and production-ready admin tooling.",
+      technologies: ["Next.js", "React", "Tailwind CSS", "MongoDB", "NextAuth"],
+      live: "https://moon-rabbit-mvp.vercel.app/",
+      image: "/projects/moon-rabbit.png"
+    },
+    {
+      title: "SongSense",
+      description: "A Thai music/language learning platform that syncs cultural annotations to YouTube videos in real time, using Next.js 15 App Router with TypeScript, MongoDB for song/note management, and NextAuth admin authentication.",
+      technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "MongoDB", "NextAuth"],
+      live: "https://songsense.vercel.app/",
+      image: "/projects/songsense.png"
     }
   ],
   education: [
