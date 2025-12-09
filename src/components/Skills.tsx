@@ -2,13 +2,14 @@
 
 import { personalData } from "@/lib/content";
 import { motion } from "framer-motion";
-import { Code2, Database, Wrench, CheckCircle2 } from "lucide-react";
+import { Code2, Database, Wrench, Sparkles } from "lucide-react";
 
 const getIconForCategory = (category: string) => {
   const lower = category.toLowerCase();
-  if (lower.includes("frontend") || lower.includes("web")) return <Code2 className="w-6 h-6" />;
-  if (lower.includes("backend") || lower.includes("data")) return <Database className="w-6 h-6" />;
-  return <Wrench className="w-6 h-6" />;
+  if (lower.includes("languages") || lower.includes("core")) return <Code2 className="w-6 h-6" />;
+  if (lower.includes("tools") || lower.includes("platforms")) return <Wrench className="w-6 h-6" />;
+  if (lower.includes("systems") || lower.includes("knowledge")) return <Database className="w-6 h-6" />;
+  return <Sparkles className="w-6 h-6" />;
 };
 
 export default function Skills() {
@@ -17,37 +18,43 @@ export default function Skills() {
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.05,
+        staggerChildren: 0.03,
         delayChildren: 0.1
       }
     }
   };
 
   const item = {
-    hidden: { opacity: 0, y: 10 },
+    hidden: { opacity: 0, scale: 0.8 },
     show: { 
       opacity: 1, 
-      y: 0,
+      scale: 1,
       transition: {
-        duration: 0.4,
+        duration: 0.3,
         ease: [0.22, 1, 0.36, 1] as any
       }
     }
   };
 
   return (
-    <section id="skills" className="py-24 px-4 relative">
+    <section id="skills" className="py-32 px-4 relative">
+      {/* Background accent */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-amber/5 to-transparent -z-10" />
+      
       <div className="container mx-auto max-w-6xl">
-        <motion.h2 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-5xl font-bold mb-16 text-center tracking-tight"
+          className="text-center mb-20"
         >
-          The Toolkit
-        </motion.h2>
+          <h2 className="text-4xl md:text-6xl font-serif font-bold mb-4 text-gradient-animate">
+            The Toolkit
+          </h2>
+          <div className="section-divider max-w-md mx-auto" />
+        </motion.div>
 
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           {personalData.skills.map((skillGroup, index) => (
             <motion.div
               key={index}
@@ -55,35 +62,36 @@ export default function Skills() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="card glass-panel border-t-4 border-t-primary w-full sm:w-[calc(50%-1rem)] md:w-[320px]"
+              className="card-premium p-6 md:p-8 hover-lift group"
             >
-              <div className="card-body">
-                <div className="flex items-center gap-3 mb-6 pb-4 border-b border-base-content/10">
-                  <div className="text-primary">
-                    {getIconForCategory(skillGroup.category)}
-                  </div>
-                  <h3 className="card-title text-xl">{skillGroup.category}</h3>
+              {/* Category Header */}
+              <div className="flex items-center gap-4 mb-6 pb-6 border-b border-amber/20">
+                <div className="p-3 bg-amber/10 rounded-xl text-amber group-hover:bg-amber group-hover:text-bg-dark transition-all duration-300 glow-amber">
+                  {getIconForCategory(skillGroup.category)}
                 </div>
-                
-                <motion.div 
-                  variants={container}
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: true }}
-                  className="flex flex-wrap gap-3"
-                >
-                  {skillGroup.items.map((skill, i) => (
-                    <motion.div 
-                      key={i} 
-                      variants={item}
-                      className="badge badge-lg bg-base-100/50 border-base-content/10 p-4 gap-2 hover:border-primary hover:text-primary transition-colors duration-300 cursor-default shadow-sm"
-                    >
-                      <CheckCircle2 className="w-3 h-3 opacity-50" />
-                      {skill}
-                    </motion.div>
-                  ))}
-                </motion.div>
+                <h3 className="text-xl md:text-2xl font-serif font-bold text-text-primary">
+                  {skillGroup.category}
+                </h3>
               </div>
+              
+              {/* Skills Grid */}
+              <motion.div 
+                variants={container}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
+                className="flex flex-wrap gap-2"
+              >
+                {skillGroup.items.map((skill, i) => (
+                  <motion.span
+                    key={i} 
+                    variants={item}
+                    className="skill-badge"
+                  >
+                    {skill}
+                  </motion.span>
+                ))}
+              </motion.div>
             </motion.div>
           ))}
         </div>
