@@ -26,8 +26,8 @@ export default function About() {
           <div className="prose prose-lg mx-auto text-base-content/80">
             <p className="lead text-xl font-medium text-primary/90 mb-6">{personalData.about.longSummary}</p>
             <p>
-                My journey started at Dev Bootcamp in San Francisco, but my real education happened in the trenches of support queues and server logs.
-                I don't just close tickets; I solve problems. Whether it's conflicting alerts from an electric vehicle or an API that won't authenticate, the process is the same: break it down, find the root cause, fix it, and explain it so it doesn't happen again.
+                Started at Dev Bootcamp in San Francisco. Learned the real work in support queues and server logs.
+                I don't just close tickets; I solve problems. Conflicting alerts from an electric vehicle, an API that won't authenticate—same process: break it down, find the root cause, fix it, explain it so it doesn't happen again.
             </p>
           </div>
         </motion.div>

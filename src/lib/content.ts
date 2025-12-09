@@ -6,47 +6,47 @@ export const personalData = {
   location: "Chattanooga, TN",
   about: {
     greeting: "Hi, I'm Khamla.",
-    summary: "I bridge the gap between people and technology, transforming complex challenges into clear, lasting solutions.",
-    longSummary: "I’ve spent my career diving into the deep end of technical problems and thrive on the 'Aha!' moment when a solution clicks into place. Support isn't just about fixing bugs—it's about empowering users and making products better."
+    summary: "I solve technical problems. When something breaks, I figure out why and fix it.",
+    longSummary: "I've spent my career working through technical problems. The 'Aha!' moment when a solution clicks is what keeps me going. Support isn't just fixing bugs—it's understanding what went wrong and making sure it doesn't happen again."
   },
   experience: [
     {
       role: "Service Technician",
       company: "Tesla",
       period: "Nov 2024 – Present",
-      description: "Diagnosing the machines of tomorrow.",
+      description: "Fixing electric vehicles.",
       highlights: [
         "Diagnose and resolve customer-reported technical failures by analyzing vehicle logs, system behavior, and diagnostic outputs",
         "Escalate complex defects to engineering teams with reproducible steps, clear test context, and structured technical summaries",
-        "Improve first-time resolution outcomes through systematic troubleshooting and iterative validation without requiring engineering intervention",
-        "Document workflows, recurring fixes, and service procedures to expand internal knowledge base and accelerate technician onboarding"
+        "Fix most issues on first contact through systematic troubleshooting and iterative validation without engineering help",
+        "Document workflows, recurring fixes, and service procedures for the internal knowledge base and new technician training"
       ]
     },
     {
       role: "Technical Support Engineer",
       company: "Skuid Inc.",
       period: "Dec 2016 – Mar 2021",
-      description: "The bridge between frustrated customers and complex code.",
+      description: "Fixing code so customers can work.",
       highlights: [
         "Resolved Tier 2/3 technical support issues for enterprise SaaS customers involving JavaScript, SQL analysis, REST APIs, and platform integrations",
-        "Translated incomplete or unclear issue reports into executable steps using log interpretation, browser dev tools, and SQL validation",
-        "Escalated critical software defects to Engineering with structured reproduction steps and customer impact summary, improving release accountability",
-        "Created and maintained knowledge base documentation and customer training content, improving customer self-service and reducing new-ticket volume",
-        "Troubleshot CRM/ERP and API integration failures using structured isolation techniques, reducing dependency on engineering escalation"
+        "Turned incomplete or unclear issue reports into executable steps using log interpretation, browser dev tools, and SQL validation",
+        "Escalated critical software defects to Engineering with structured reproduction steps and customer impact summary",
+        "Created and maintained knowledge base documentation and customer training content",
+        "Troubleshot CRM/ERP and API integration failures using structured isolation techniques"
       ]
     }
   ],
   projects: [
     {
       title: "Moon Rabbit",
-      description: "Built a bilingual landing page and lead management CRM for a small business service, featuring a Next.js 15 App Router architecture, MongoDB-backed pipeline dashboard, and NextAuth authentication to demonstrate familiarity with server components, API routes, and production-ready admin tooling.",
+      description: "Bilingual landing page and lead management CRM for a small business service. Built with Next.js 15 App Router, MongoDB for the pipeline dashboard, and NextAuth authentication. Uses server components, API routes, and production-ready admin tooling.",
       technologies: ["Next.js", "React", "Tailwind CSS", "MongoDB", "NextAuth"],
       live: "https://moon-rabbit-mvp.vercel.app/",
       image: "/projects/moon-rabbit.png"
     },
     {
       title: "SongSense",
-      description: "A Thai music/language learning platform that syncs cultural annotations to YouTube videos in real time, using Next.js 15 App Router with TypeScript, MongoDB for song/note management, and NextAuth admin authentication.",
+      description: "Thai music and language learning platform that syncs cultural annotations to YouTube videos in real time. Built with Next.js 15 App Router and TypeScript, MongoDB for song and note management, and NextAuth admin authentication.",
       technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "MongoDB", "NextAuth"],
       live: "https://songsense.vercel.app/",
       image: "/projects/songsense.png"
