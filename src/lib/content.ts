@@ -50,6 +50,13 @@ export const personalData = {
       technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "MongoDB", "NextAuth"],
       live: "https://songsense.vercel.app/",
       image: "/projects/songsense.png"
+    },
+    {
+      title: "ill-destroy-u",
+      description: "A fun project to teach my son basic coding. Retro-inspired vertical shooter arcade game with multi-level progression and boss battles. Built with vanilla JavaScript and HTML5 Canvas featuring a custom game engine with delta-time rendering, collision detection, and object-oriented entity management.",
+      technologies: ["JavaScript", "HTML5 Canvas", "CSS", "OOP Design"],
+      live: "https://ill-destroy-u.vercel.app/",
+      image: "/projects/ill-destroy-u.png"
     }
   ],
   education: [
@@ -64,6 +71,7 @@ export const personalData = {
     { category: "Languages & Core Technologies", items: ["JavaScript", "SQL", "REST APIs", "HTML/CSS", "SaaS platforms"] },
     { category: "Tools & Platforms", items: ["Jira", "Git/GitHub", "Browser Dev Tools", "Freshdesk", "Salesforce CRM"] },
     { category: "Systems Knowledge", items: ["Linux/CLI", "log analysis", "HTTP fundamentals", "browser debugging"] },
-    { category: "Professional Strengths", items: ["Root cause analysis", "escalation management", "knowledge base creation", "customer training", "cross-functional collaboration"] }
+    { category: "Professional Strengths", items: ["Root cause analysis", "escalation management", "knowledge base creation", "customer training", "cross-functional collaboration"] },
+    { category: "AI Tools", items: ["Cursor AI + Claude", "Gemini + Antigravity", "ChatGPT + Codex"] }
   ]
 };
