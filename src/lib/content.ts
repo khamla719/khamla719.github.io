@@ -69,7 +69,7 @@ export const personalData = {
   ],
   skills: [
     { category: "Languages & Core Technologies", items: ["JavaScript", "SQL", "REST APIs", "HTML/CSS", "SaaS platforms"] },
-    { category: "Tools & Platforms", items: ["Jira", "Git/GitHub", "Browser Dev Tools", "Freshdesk", "Salesforce CRM"] },
+    { category: "Tools & Platforms", items: ["Jira", "Git/GitHub", "Browser Dev Tools", "Freshdesk", "Salesforce CRM", "Postman"] },
     { category: "Systems Knowledge", items: ["Linux/CLI", "log analysis", "HTTP fundamentals", "browser debugging"] },
     { category: "Professional Strengths", items: ["Root cause analysis", "escalation management", "knowledge base creation", "customer training", "cross-functional collaboration"] },
     { category: "AI Tools", items: ["Cursor AI + Claude", "Gemini + Antigravity", "ChatGPT + Codex"] }
